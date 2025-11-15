@@ -162,7 +162,7 @@ export function EndGame({ gameState, onRestart }: EndGameProps) {
   const tips = getTips();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 overflow-y-auto py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-pink-400 to-blue-400 overflow-y-auto py-8 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -325,7 +325,7 @@ export function EndGame({ gameState, onRestart }: EndGameProps) {
         >
           <button
             onClick={onRestart}
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 rounded-2xl shadow-2xl transition-all transform hover:scale-105 inline-flex items-center gap-2"
+            className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-2xl shadow-2xl transition-all transform hover:scale-105 inline-flex items-center gap-2"
           >
             <RotateCcw className="w-5 h-5" />
             Play Again

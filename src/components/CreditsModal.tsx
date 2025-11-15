@@ -18,7 +18,7 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
         className="bg-white rounded-3xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-hidden flex flex-col"
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6 text-white">
+        <div className="bg-pink-500 p-6 text-white">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-2xl mb-1">📜 Credits & Licenses</h2>
@@ -175,6 +175,18 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
                 license="Apache License 2.0"
                 link="https://cva.style"
               />
+              <CreditItem
+                name="clsx"
+                description="Utility for constructing className strings conditionally"
+                license="MIT License"
+                link="https://github.com/lukeed/clsx"
+              />
+              <CreditItem
+                name="tailwind-merge"
+                description="Merge Tailwind CSS classes without style conflicts"
+                license="MIT License"
+                link="https://github.com/dcastil/tailwind-merge"
+              />
             </div>
           </section>
 
@@ -184,6 +196,18 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
               🖼️ Image Resources
             </h3>
             <div className="grid gap-3">
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 border-2 border-purple-200">
+                <h4 className="text-gray-800 mb-1">Custom Team Assets</h4>
+                <p className="text-gray-600 text-sm mb-2">
+                  Original artwork created by our team artist for this project
+                </p>
+                <ul className="text-gray-600 text-sm space-y-1 list-disc list-inside">
+                  <li>Game title logo (Suomi Life)</li>
+                  <li>Main menu background image</li>
+                  <li>City map background image</li>
+                </ul>
+                <p className="text-gray-500 text-xs mt-2">License: Project License (MIT)</p>
+              </div>
               <CreditItem
                 name="Unsplash"
                 description="Free high-quality images for commercial and non-commercial use"
@@ -192,7 +216,7 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
               />
             </div>
             <p className="text-sm text-gray-600 mt-3 bg-gray-50 rounded-xl p-3">
-              All images used in this application are sourced from Unsplash and are free to use under the Unsplash License. Credits to the individual photographers whose work enhances this educational experience.
+              Custom images were created by our team artist and are licensed under the same MIT license as the project. Additional images are sourced from Unsplash and are free to use under the Unsplash License.
             </p>
           </section>
 
@@ -290,7 +314,7 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
         <div className="border-t border-gray-200 p-4 bg-gray-50">
           <button
             onClick={onClose}
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-3 rounded-xl transition-all"
+            className="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 rounded-xl transition-all"
           >
             Close
           </button>

@@ -99,13 +99,15 @@ export function InteractionModal({ location, gameState, onClose, onChoice }: Int
 
   const handleFinish = () => {
     if (selectedChoice) {
-      onChoice(selectedChoice);
-      // Reset state before closing
-      setCurrentPage(0);
+      // Reset state and close first to prevent any re-renders
+      const choiceToApply = selectedChoice;
       setSelectedChoice(null);
+      setCurrentPage(0);
       setShowMedia(false);
       setShoppingData(null);
       onClose();
+      // Apply choice effects after closing
+      onChoice(choiceToApply);
     }
   };
 

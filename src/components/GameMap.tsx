@@ -62,7 +62,7 @@ export function GameMap({ onLocationClick, currentLocation }: GameMapProps) {
   ];
 
   // This variable is for 2D city map images. Format must be JPG or JPEG format.
-  const cityBackgroundImage = "https://images.unsplash.com/photo-1476385822777-70eabacbd41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXR5JTIwYWVyaWFsJTIwdmlld3xlbnwxfHx8fDE3NjMxOTA3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080"; // 2D city placeholder for future purpose
+  const cityBackgroundImage = "https://i.imgur.com/yRjp0aR.jpeg"; // Custom city map background from team artist
 
   // Find current location position
   const currentLocationData = locations.find(loc => loc.id === currentLocation);

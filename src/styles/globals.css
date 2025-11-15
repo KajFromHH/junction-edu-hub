@@ -117,6 +117,35 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom Color Palette for Suomi Life */
+  --color-green-500: #14c114;
+  --color-green-400: #3dd13d;
+  --color-green-600: #11a011;
+  
+  --color-blue-500: #1b2cff;
+  --color-blue-400: #4d5cff;
+  --color-blue-600: #1523cc;
+  
+  --color-red-500: #ef2917;
+  --color-red-400: #f25545;
+  --color-red-600: #bf2112;
+  
+  --color-purple-500: #caafef;
+  --color-purple-400: #d9c7f3;
+  --color-purple-600: #b591e3;
+  
+  --color-gray-500: #787878;
+  --color-gray-400: #9a9a9a;
+  --color-gray-600: #5e5e5e;
+  
+  --color-yellow-500: #eab308;
+  --color-yellow-400: #facc15;
+  --color-yellow-600: #ca8a04;
+  
+  --color-orange-500: #f47a00;
+  --color-orange-400: #f69433;
+  --color-orange-600: #c36200;
 }
 
 @layer base {

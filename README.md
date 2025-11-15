@@ -1,7 +1,7 @@
 
-  # Version SimCity - Finance EduGame
+  # Suomi Life - Junction 2025
 
-  This is a code bundle for Version SimCity - Finance EduGame. The original project is available at https://www.figma.com/design/BaXj4HtS0IaRgnHkg0tifK/Version-SimCity---Finance-EduGame.
+  This is a code bundle for Suomi Life - Junction 2025. The original project is available at https://www.figma.com/design/BaXj4HtS0IaRgnHkg0tifK/Suomi-Life---Junction-2025.
 
   ## Running the code
 

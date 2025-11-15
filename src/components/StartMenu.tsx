@@ -5,7 +5,10 @@ import { useState } from 'react';
 import { CreditsModal } from './CreditsModal';
 
 // This is image for title in the main menu. It must be in format of JPG or JPEG.
-const titleImage = "https://images.unsplash.com/photo-1533310266094-8898a03807dd?w=800&q=80";
+const titleImage = "https://i.imgur.com/8sXunSV.png";
+
+// Main menu background image from team artist
+const menuBackgroundImage = "https://i.imgur.com/GO7ujGo.png";
 
 interface StartMenuProps {
   onLogin: () => void;
@@ -16,7 +19,18 @@ export function StartMenu({ onLogin, onCreateAccount }: StartMenuProps) {
   const [showCredits, setShowCredits] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center p-4">
+    <div className="relative min-h-screen flex items-center justify-center p-4">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <ImageWithFallback
+          src={menuBackgroundImage}
+          alt="Menu Background"
+          className="w-full h-full object-cover"
+        />
+        {/* Optional overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/20" />
+      </div>
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -59,15 +73,12 @@ export function StartMenu({ onLogin, onCreateAccount }: StartMenuProps) {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="mb-3"
         >
-          <div className="relative w-full aspect-[2/1] rounded-2xl overflow-hidden shadow-xl mb-2">
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-xl mb-2 bg-black">
             <ImageWithFallback
               src={titleImage}
               alt="Suomi Life"
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain py-6 px-4"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center pb-3">
-              <h1 className="text-white drop-shadow-lg">Suomi Life</h1>
-            </div>
           </div>
           <p className="text-center text-gray-600 text-xs">
             Learn finance through life choices
@@ -83,7 +94,7 @@ export function StartMenu({ onLogin, onCreateAccount }: StartMenuProps) {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={onLogin}
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
           >
             <LogIn className="w-3.5 h-3.5" />
             <span className="text-xs">Login</span>
@@ -94,7 +105,7 @@ export function StartMenu({ onLogin, onCreateAccount }: StartMenuProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
             onClick={onCreateAccount}
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
           >
             <UserPlus className="w-3.5 h-3.5" />
             <span className="text-xs">Create New Account</span>
@@ -107,7 +118,7 @@ export function StartMenu({ onLogin, onCreateAccount }: StartMenuProps) {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => setShowCredits(true)}
-            className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
           >
             <Award className="w-3.5 h-3.5" />
             <span className="text-xs">Credits</span>

@@ -457,7 +457,7 @@ function App() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-2xl px-6 py-3 shadow-2xl border-2 border-purple-300"
+            className="bg-red-500 text-white rounded-2xl px-6 py-3 shadow-2xl border-2 border-red-300"
           >
             <p className="text-[10px] uppercase tracking-wider opacity-90 text-center">Your Story</p>
             <p className="text-center whitespace-nowrap">{gameState.storylineTitle}</p>
