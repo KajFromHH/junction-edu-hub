@@ -17,7 +17,7 @@ export function PersonalInfoPage({ onNext }: PersonalInfoPageProps) {
     }
   };
 
-  const isValid = name.trim().length > 0 && age && parseInt(age) >= 12 && parseInt(age) <= 18;
+  const isValid = name.trim().length > 0 && age && parseInt(age) >= 0;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 flex items-center justify-center p-4">
@@ -67,12 +67,11 @@ export function PersonalInfoPage({ onNext }: PersonalInfoPageProps) {
               type="number"
               value={age}
               onChange={(e) => setAge(e.target.value)}
-              placeholder="Enter your age (12-18)"
-              min="12"
-              max="18"
+              placeholder="Enter your age"
+              min="0"
               className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-pink-500 focus:outline-none transition-all text-gray-800"
             />
-            <p className="text-gray-500 text-sm mt-1">Ages 12-18 only</p>
+            <p className="text-gray-500 text-sm mt-1">All ages welcome (no negative numbers)</p>
           </div>
 
           {/* Email and Password - DISABLED for faster playtesting */}

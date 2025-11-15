@@ -424,7 +424,7 @@ After Junction 2025, your team has the right to:
 ## Disclaimer
 
 **Educational Use Only:**  
-This project is designed exclusively for educational purposes to teach financial literacy to Finnish teenagers (ages 12-18). It should not be used for:
+This project is designed exclusively for educational purposes to teach financial literacy to people of all ages. It should not be used for:
 - ❌ Collecting personal identifiable information (PII)
 - ❌ Handling sensitive financial data
 - ❌ Providing professional financial advice
@@ -448,7 +448,7 @@ For questions about licensing or this project:
 **Project:** Suomi Life  
 **Created for:** Junction 2025 Hackathon  
 **Challenge:** Helsinki Education Hub Challenge  
-**Focus:** Financial Literacy Education for Finnish Youth (Ages 12-18)
+**Focus:** Financial Literacy Education for All Ages
 
 ---
 

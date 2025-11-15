@@ -238,6 +238,24 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
                 license="Public Information"
                 link="https://www.kela.fi"
               />
+              <CreditItem
+                name="Kuluttajaliitto"
+                description="Consumer League of Finland - Consumer rights education"
+                license="Public Information"
+                link="https://www.kuluttajaliitto.fi"
+              />
+              <CreditItem
+                name="Finanssivalvonta"
+                description="Finnish Financial Supervisory Authority - Financial regulation"
+                license="Public Information"
+                link="https://www.finanssivalvonta.fi"
+              />
+              <CreditItem
+                name="Pörssisäätiö"
+                description="Finnish Foundation for Share Promotion - Investment education"
+                license="Public Information"
+                link="https://www.porssisaatio.fi"
+              />
             </div>
             <p className="text-sm text-gray-600 mt-3 bg-gray-50 rounded-xl p-3">
               This game references Finnish financial institutions and regulations for educational purposes only. All scenarios are fictional and simplified for learning.
@@ -254,7 +272,7 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
                 <strong>Suomi Life</strong> - An Educational Finance Game for Finnish Youth
               </p>
               <p>
-                Target Audience: Ages 12-18
+                Target Audience: All ages
               </p>
               <p>
                 Purpose: Teaching financial literacy through interactive gameplay
@@ -284,7 +302,7 @@ export function CreditsModal({ isOpen, onClose }: CreditsModalProps) {
                 <strong>Challenge:</strong> Helsinki Education Hub Challenge - Creating innovative solutions for Finnish youth education.
               </p>
               <p>
-                <strong>Focus Area:</strong> Financial literacy education for teenagers aged 12-18.
+                <strong>Focus Area:</strong> Financial literacy education for all ages.
               </p>
               <a
                 href="https://www.hackjunction.com"

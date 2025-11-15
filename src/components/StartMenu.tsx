@@ -127,13 +127,13 @@ export function StartMenu({ onLogin, onCreateAccount }: StartMenuProps) {
 
         {/* Combined Notice */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7, duration: 0.5 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
           className="mt-3 p-2 bg-blue-50 border border-blue-200 rounded-xl"
         >
           <p className="text-center text-blue-800 text-xs leading-relaxed">
-            ℹ️ No data saved • Educational purposes only • Ages 12-18
+            ℹ️ No data saved • Educational purposes only • All ages
           </p>
         </motion.div>
 
